@@ -1,0 +1,194 @@
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+input[type=number] {
+    -moz-appearance:textfield; /* Firefox */
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Space Mono', monospace;
+    background-color : hsl(185, 41%, 84%);
+}
+.container{
+    width:460px;
+}
+input,
+input::placeholder {
+    font-family: 'Space Mono', monospace;
+}
+.tipsCalc{
+    background-color : white;
+    padding:38px;
+    border-radius: 25px;
+}
+.name {
+    padding: 48px;
+    margin:auto;
+}
+.name h2{
+    text-align:center;
+    letter-spacing: 6px;
+}
+.right-sec{
+    border-radius: 12px;
+    padding : 32px;
+    background-color: hsl(183, 100%, 15%);
+    margin-top: 42px;
+}
+.top{
+    display:flex;
+}
+.bottom{
+    display: flex;
+    margin-top:16px;
+}
+.result1{
+    color:hsl(172, 67%, 45%);
+    margin-left: 96px;
+}
+.result2{
+    color:hsl(172, 67%, 45%);
+    margin-left: 124px;
+}
+.lbl{
+    color:white;
+}
+.person{
+    color:hsl(184, 14%, 56%);
+}
+span{
+    display:block;
+}
+.btn-reset {
+    margin-top:30px;
+    background-color: hsl(172, 67%, 45%); /* Green */
+    border: none;
+    color: hsl(183, 100%, 15%);
+    font-style:bold;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    width:100%;
+    border-radius: 6px;
+    font-weight: bold;
+  }
+  .btn-reset:hover{
+    background-color:hsl(186, 14%, 43%);
+  }
+  .input{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: none;
+    background-color:hsl(189, 41%, 97%);
+  }
+
+.alert{
+    font-size:10px;
+    color:red;
+}
+.tip{
+    margin-top:20px;
+}
+.people{
+    margin-top:20px;
+}
+.btn{
+    background-color: hsl(183, 100%, 15%); /* Green */
+    border: none;
+    color: white;
+    padding: 20px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    font-size: 16px;
+    width:164px;
+    height:56px;
+    margin: 4px;
+    border-radius: 4px;
+}
+.custom{
+    width:164px;
+    height:56px;
+    box-sizing: border-box;
+    border: none;
+    background-color:hsl(189, 41%, 97%);
+    margin-left : 6px;
+    text-align:center;
+}
+.active-tip{
+    background-color:hsl(172, 67%, 45%);
+    color:hsl(183, 100%, 15%);
+}
+.grid-item {
+    display: inline-grid;
+  }
+.custom::placeholder{
+    text-align:center;
+    font-size:20px;
+    color:hsl(183, 100%, 15%);
+}
+.bill-form{
+    background-image:url(../images/icon-dollar.svg);
+    background-repeat: no-repeat;
+    background-position: 12px 18px;
+    text-align:right;
+    font-size:20px;
+    color:hsl(183, 100%, 15%);
+}
+.ppl-form{
+    background-image:url(../images/icon-person.svg);
+    background-repeat: no-repeat;
+    background-position: 12px 18px;
+    text-align:right;
+    font-size:20px;
+    color:hsl(183, 100%, 15%);
+}
+
+.attribution { font-size: 11px; margin-top : 32px; text-align:center}
+.attribution a { color: hsl(228, 45%, 44%); }
+
+@media screen and (min-width: 760px){
+.container{
+    margin:auto;
+    width:840px;
+}
+.tipsCalc{
+    width:840px;
+    display:flex;
+}
+.left-sec{
+    width:45%;
+    height:auto;
+}
+.right-sec{
+    margin-left:24px;
+    margin-bottom:24px;
+    width:45%;
+    height:auto;
+}
+.btn-reset{
+    margin-top:169px;
+}
+
+.result1{
+    
+    margin-left: 128px;
+}
+.result2{
+   
+    margin-left: 156px;
+}
+
+}

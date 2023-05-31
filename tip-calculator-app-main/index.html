@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Tip calculator app</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  
+</head>
+<body>
+  <div class="container">
+
+    <div class="name">
+      <h2>SPLI</h2>
+      <h2>TTER</h2>
+    </div>
+    
+    <div class="tipsCalc">
+      <div class="left-sec">
+        <div class="bill">
+          <span  class="bill-label">Bill </span>
+        
+          <input type="number" id="bill-form" class="input bill-form" >
+          <span class="bills alert"></span>
+        </div>
+  
+        <div class="tip">
+          <span class="tip-label">Select Tip %</span>
+          <button id="btn-5" class="btn grid-item btn-5 active-tip" >5%</button>
+          <button id="btn-10" class="btn grid-item btn-10" >10%</button>
+          <button id="btn-15" class="btn grid-item btn-15"  >15%</button>
+          <button id="btn-25" class="btn grid-item btn-25"  >25%</button>
+          <button id="btn-50" class="btn grid-item btn-50" >50%</button>
+          <input type="number" class="custom grid-item" id="custom" placeholder="Custom">
+          <span class="tips alert"></span>
+        </div>
+        
+        <div class="people">
+          <span class="ppl-num" id="ppl-num">Number of People</span>
+        
+          <input type="number" id="ppl-form" class="input ppl-form">
+          <span class="ppls alert"></span>
+        </div>
+  
+      </div>
+      <div class="right-sec">
+
+        <div class="top">
+          <div class="left">
+            <span class="lbl"> Tip Amount</span>
+            <span class="person">/person</span>
+          </div>
+          <div class="right">
+            <h2 class="result1" id="result1">$0</h2>
+          </div>
+        </div>
+
+        <div class="bottom">
+          <div class="left">
+            <span class="lbl">Total</span>
+            <span class="person">/person</span>
+          </div>
+          <div class="right">
+            <h2 class="result2" id="result2">$0</h2>
+          </div>
+        </div>
+  
+        <button id="btn-reset" class="btn-reset">RESET</button>
+      </div>
+    </div>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="https://github.com/rediott">rediott</a>.
+    </div>
+
+    </div>
+    
+
+  
+
+  <script src="index.js"></script> 
+</body>
+</html>
